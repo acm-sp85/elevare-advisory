@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import { ModeToggle } from "@/components/mode-toggle";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,13 +52,13 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="ml-4 pl-4 border-l border-border/20">
-                <ModeToggle />
+              {/* ModeToggle removed */}
               </div>
             </div>
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
-            <ModeToggle />
+            {/* ModeToggle removed */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground hover:text-primary focus:outline-none"

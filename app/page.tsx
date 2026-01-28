@@ -51,6 +51,7 @@ export default function Home() {
               key={service.id}
               index={index}
               title={service.title}
+              subtitle={service.subtitle}
               description={service.description}
               slug={service.slug}
             />

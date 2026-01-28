@@ -6,83 +6,118 @@ export const siteData = {
   },
   about: {
     title: "About Elevare",
-    description: "Elevare is an advisory practice focused on putting structure around handling complex deals, from the moment you decide to pursue an opportunity to ensuring you can deliver on the signed commitments. We help you make the right choices and navigate the internal complexity of your organisation.",
+    description: "Elevare is an advisory practice that works with companies to put structure around how they handle complex deals. From deciding which opportunities to pursue to making sure signed commitments can actually be delivered, we specialize in guiding businesses to effectively manage intricate deals and ensure successful outcomes.",
   },
   services: [
     {
       id: "deal-process",
-      title: "Deal process & deal desk",
-      description: "Optimising your internal processes to prevent bottlenecks in high-value deals.",
+      title: "Deal process management",
+      subtitle: "Deal process & deal desk",
+      description: "When managing large or complex deals is a painful process, decisions take longer than needed or responsibilities are unclear, we take lead in setting up a clear deal process or designated deal desk. This ensures deals move efficiently through approvals, exceptions, pricing, and governance so opportunities don’t stall.",
       slug: "deal-process-management",
-      challenge: "Deals stall in approval loops or get stuck in internal bureaucracy.",
-      whatIDo: [
-        "Design or improve deal and approval processes.",
-        "Set up or optimise deal desk functions.",
-        "Clarify roles and responsibilities in the deal lifecycle."
-      ],
-      typicalSituations: [
-        "You are losing deals because you are too slow to respond.",
-        "Internal approvals take longer than the negotiation with the client.",
-        "Sales teams are frustrated with administrative overhead."
-      ],
-      outcome: "Faster deal turnaround, clear accountability, and higher win rates.",
+        challenge:
+    "In many organisations, deals slow down not because of market conditions, but because internal processes cannot keep up. Pricing exceptions, approvals, risk reviews, and governance steps become bottlenecks—especially in complex or high-value opportunities. The result is delayed decisions, inconsistent outcomes, and unnecessary leadership involvement.",
+  whatIDo: [
+    "Design or improve deal and approval processes",
+    "Set up or optimise deal desks",
+    "Clarify roles, responsibilities, and decision rights",
+    "Define pricing, risk, and exception workflows",
+    "Support complex or sensitive deals through internal governance",
+    "Reduce friction between sales, finance, legal, and leadership"
+  ],
+  typicalSituations: [
+    "Deals stall in approval loops",
+    "Pricing and margin decisions are inconsistent",
+    "Responsibility for approvals is unclear",
+    "Senior leadership is pulled into routine deal decisions",
+    "Deal governance differs per team or region"
+  ],
+  outcome:
+    "Faster deal turnaround, clear accountability, better margin control, reduced leadership involvement—and a deal process people actually use.",
       image: "/computer.jpg"
     },
     {
       id: "deal-transition",
-      title: "Deal transition & alignment",
-      description: "Stabilising signed deals to move into delivery without margin erosion or constant escalation.",
+      title: "Deal execution readines",
+      subtitle: "Deal transition & alignment",
+      description: "When signed deals come under pressure across scope, responsibility, and commercial terms, we ensure post-signature agreements are executable, stakeholders are aligned, and escalation is managed efficiently.",
       slug: "deal-transition-alignment",
-      challenge: "The transition from sales to delivery is rocky, leading to scope creep and missed expectations.",
-      whatIDo: [
-        "Facilitate handover workshops between sales and delivery teams.",
-        "Establish clear success criteria and KPIs for delivery.",
-        "Monitor early-stage delivery to ensure alignment with the contract."
-      ],
-      typicalSituations: [
-        "Delivery teams claim what was sold is impossible to deliver.",
-        "Immediate margin erosion as soon as the project starts.",
-        "Client dissatisfaction due to disconnect between sales promises and reality."
-      ],
-      outcome: "Smooth transition to delivery, protected margins, and satisfied clients.",
+        challenge:
+    "Signing a deal does not automatically mean it is ready to be executed. In complex agreements, unresolved assumptions, differing interpretations, or missing ownership often surface only after signature. Without intervention, this leads to escalation, renegotiation, delivery friction, and early margin erosion.",
+  whatIDo: [
+    "Review the signed agreement, pricing, and assumptions",
+    "Identify execution risks and pressure points",
+    "Align sales, delivery, legal, and finance",
+    "Clarify scope interpretation and responsibilities",
+    "Define governance and escalation paths",
+    "Support structured post-signature discussions when needed",
+    "Prepare a clean transition into delivery and contract management"
+  ],
+  typicalSituations: [
+    "Delivery challenges what was sold",
+    "Scope and expectations differ across teams",
+    "Pricing or margin comes under pressure during planning",
+    "Leadership is drawn into repeated escalations",
+    "Post-signature discussions drift without structure",
+    "Multi-stakeholder deals lose momentum after signing"
+  ],
+  outcome:
+    "Fewer escalations, clear ownership and decision rights, a protected commercial position, and a faster, calmer start of delivery.",
       image: "/boats.jpg"
     },
     {
       id: "capture-bid",
-      title: "Capture & bid support",
-      description: "Providing hands-on support for winning the right deals through disciplined preparation.",
+      title: "Supporting services",
+      subtitle: "Capture & bid support",
+      description: "When deciding which deals to pursue and how to win them. I support in early decision-making and end-to-end bid work, including opportunity selection, proposal project management, content review, and pitch development, to increase the likelihood of winning high-value deals.",
       slug: "capture-bid-support",
-      challenge: "Biding on the wrong opportunities or failing to articulate value effectively.",
-      whatIDo: [
-        "Qualify opportunities rigorously.",
-        "Develop winning value propositions and deal strategies.",
-        "Manage the bid response process to ensure quality and timeliness."
-      ],
-      typicalSituations: [
-        "Win rates are low despite high activity levels.",
-        "Proposals are generic and don't address specific client pain points.",
-        "Last-minute scrambles to get bids out the door."
-      ],
-      outcome: "Higher quality bids, better resource allocation, and increased win rates.",
+       challenge:
+    "Winning the right deals requires more than a good idea or a strong proposal. It requires clear choices, disciplined preparation, and consistent execution across capture and bid activities. Without structure and ownership, teams lose focus, messages fragment, deadlines slip, and senior stakeholders are pulled in too late.",
+  whatIDo: [
+    "Support opportunity qualification and bid/no-bid decisions",
+    "Help shape win strategy and positioning",
+    "Manage end-to-end bid and RFP processes",
+    "Structure timelines, responsibilities, and governance",
+    "Coordinate contributors and reviewers",
+    "Review and strengthen written responses",
+    "Coach senior stakeholders for client pitches and presentations"
+  ],
+  typicalSituations: [
+    "Too many opportunities and too little focus",
+    "Bids run late or lack ownership",
+    "Messages are inconsistent across sections",
+    "Senior stakeholders are insufficiently prepared for pitches",
+    "Internal teams struggle to work together under deadline pressure"
+  ],
+  outcome:
+    "Better focus on the right opportunities, stronger and more coherent proposals, more controlled bid processes, and improved confidence in client-facing moments.",
       image: "/world.jpg"
     },
     {
       id: "processes-roles",
-      title: "Processes, roles & collaboration tools",
-      description: "Aligning people and technology to ensure digital tools are actually adopted and effective.",
+      title: "Ways of working operations",
+      subtitle: "Processes, roles & collaboration tools",
+      description: "When ways of working are unclear across distributed teams, I help teams collaborate smoothly, across locations and functions, by clarifying processes, responsibilities, and guiding in the selection, implementation and adoption of digital tools.",
       slug: "processes-roles-collaboration",
-      challenge: "Tools are implemented but not used, or processes exist only on paper.",
-      whatIDo: [
-        "Align tool configuration with actual workflows.",
-        "Drive adoption through change management and training.",
-        "Rationalise the tool stack to reduce complexity."
-      ],
-      typicalSituations: [
-        "CRM data is unreliable because adoption is poor.",
-        "Collaboration tools (e.g., Teams, Slack) create noise rather than value.",
-        "Disconnect between IT implementation and business needs."
-      ],
-      outcome: "Efficient workflows, clear data visibility, and higher ROI on tool investments.",
+       challenge:
+    "Many organisations invest heavily in tools and platforms, yet still struggle with how work actually gets done. The issue is rarely the technology itself, but unclear processes, roles, and decision-making frameworks. Without alignment, adoption remains low, collaboration breaks down, and the expected value of transformation initiatives is never realised.",
+  whatIDo: [
+    "Assess current ways of working across teams",
+    "Clarify roles, responsibilities, and decision points",
+    "Support implementation of digital workplace tools",
+    "Translate business needs into practical operating models",
+    "Define governance, usage agreements, and adoption approaches",
+    "Support change and communication activities"
+  ],
+  typicalSituations: [
+    "New tools are implemented but poorly adopted",
+    "Teams work differently without clear alignment",
+    "Collaboration breaks down across locations or functions",
+    "Governance exists on paper but not in practice",
+    "Change initiatives struggle to land"
+  ],
+  outcome:
+    "Clear and consistent ways of working, better use of existing tools, reduced friction between teams, and higher adoption and engagement.",
       image: "/group horizontal.avif"
     }
   ],

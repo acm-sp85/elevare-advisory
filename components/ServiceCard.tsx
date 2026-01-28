@@ -9,9 +9,10 @@ interface ServiceCardProps {
   description: string;
   slug: string;
   index: number;
+  subtitle: string;
 }
 
-export function ServiceCard({ title, description, slug, index }: ServiceCardProps) {
+export function ServiceCard({ title, description, slug, index, subtitle }: ServiceCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -29,6 +30,7 @@ export function ServiceCard({ title, description, slug, index }: ServiceCardProp
           <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
             {title}
           </h3>
+          <p className="text-muted-foreground mb-4 font-bold text-black">{subtitle}</p>
           <p className="text-muted-foreground leading-relaxed mb-8">
             {description}
           </p>
