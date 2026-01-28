@@ -1,9 +1,17 @@
-import { siteData } from "@/lib/data";
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-export function Footer() {
-  const { phone, email, locations, copyright } = siteData.footer;
+interface FooterProps {
+  data: {
+    phone: string;
+    email: string;
+    locations: string;
+    copyright: string;
+  };
+}
+
+export function Footer({ data }: FooterProps) {
+  const { phone, email, locations, copyright } = data;
 
   return (
     <footer className="bg-footer text-footer-foreground pt-16 pb-8" id="contact">

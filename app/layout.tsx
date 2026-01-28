@@ -12,11 +12,14 @@ export const metadata: Metadata = {
   description: "Helping organisations structure, execute, and stabilise complex deals — from pursuit to delivery.",
 };
 
-export default function RootLayout({
+import { getSiteData } from "@/lib/fetch-data";
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const siteData = await getSiteData();
   return (
     <html lang="en" className="scroll-smooth">
       <body
@@ -33,7 +36,7 @@ export default function RootLayout({
           <main className="min-h-screen">
             {children}
           </main>
-          <Footer />
+           <Footer data={siteData.footer} />
         </ThemeProvider>
       </body>
     </html>

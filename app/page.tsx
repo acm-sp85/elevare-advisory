@@ -1,12 +1,15 @@
 import { Hero } from "@/components/Hero";
 import { ServiceCard } from "@/components/ServiceCard";
-import { siteData } from "@/lib/data";
 import Image from "next/image";
 
-export default function Home() {
+import { getSiteData } from "@/lib/fetch-data";
+
+export default async function Home() {
+  const siteData = await getSiteData();
+
   return (
     <div>
-      <Hero />
+      <Hero data={siteData.hero} />
       
       {/* About Section */}
       <section id="about" className="py-24 bg-muted/30">

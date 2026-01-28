@@ -1,13 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { siteData } from "@/lib/data";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-export function Hero() {
-  const { title, subtitle, cta } = siteData.hero;
+interface HeroProps {
+  data: {
+    title: string;
+    subtitle: string;
+    cta: string;
+  };
+}
+
+export function Hero({ data }: HeroProps) {
+  const { title, subtitle, cta } = data;
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background">
