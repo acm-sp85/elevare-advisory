@@ -30,7 +30,7 @@ export const siteData = {
         "Approvals are missed, leading to unfavorable terms or commitments you can't deliver",
         "Responsibility for approvals is unclear; leadership is pulled into routine deal decisions"
       ],
-      outcome: "Faster deal turnaround, clear accountability, better margin control, reduced leadership involvement and a deal process people can actually follow.",
+      outcome: "Faster deal turnaround, clear accountability, better margin control, reduced leadership involvement and a deal process people can actually follows.",
       image: "/computer.jpg"
     },
     {

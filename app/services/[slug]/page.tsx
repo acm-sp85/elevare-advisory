@@ -107,8 +107,8 @@ export default async function ServicePage({ params }: Props) {
           </div>
 
           {/* Outcome */}
-          <section className="bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 text-center">
-            <h2 className="text-2xl font-semibold mb-6">The Outcome</h2>
+          <section className="bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 text-left">
+            <h2 className="text-2xl font-semibold mb-6 text-center">The Outcome</h2>
             <div className={`text-lg opacity-90 font-medium ${service.outcome.includes('\n') ? "text-left inline-block max-w-3xl space-y-3" : "text-center"}`}>
               {service.outcome.split('\n').map((line, i) => (
                 <div key={i} className={`flex items-start ${!service.outcome.includes('\n') && "justify-center"}`}>
