@@ -1,4 +1,4 @@
-import { siteData } from "@/lib/data"; // Ensure data.ts includes 'image' field for services
+import { getSiteData } from "@/lib/fetch-data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
@@ -11,6 +11,7 @@ type Props = {
 };
 
 export async function generateStaticParams() {
+  const siteData = await getSiteData();
   return siteData.services.map((service) => ({
     slug: service.slug,
   }));
@@ -18,6 +19,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
+  const siteData = await getSiteData();
   const service = siteData.services.find((s) => s.slug === slug);
   if (!service) return { title: "Service Not Found" };
   
@@ -29,6 +31,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function ServicePage({ params }: Props) {
   const { slug } = await params;
+  const siteData = await getSiteData();
   const service = siteData.services.find((s) => s.slug === slug);
 
   if (!service) {
@@ -57,12 +60,24 @@ export default async function ServicePage({ params }: Props) {
         <div className="space-y-16">
           {/* Challenge Section */}
           <section className="bg-muted/30 rounded-3xl p-8 md:p-12 border border-border/50">
-            <h2 className="text-2xl font-semibold mb-6 text-primary">The Challenge</h2>
+            {/* <h2 className="text-2xl font-semibold mb-6 text-primary">The Challenge</h2> */}
             <p className="text-lg text-foreground/80 leading-relaxed">
               {service.challenge}
             </p>
           </section>
 
+          {/* Typical Situations */}
+          <section>
+            <h2 className="text-2xl font-semibold mb-8 text-foreground">Typical Situations</h2>
+            <div className="space-y-4">
+              {service.typicalSituations.map((item, i) => (
+                <div key={i} className="flex items-start">
+                  <CheckCircle2 className="h-6 w-6 text-secondary flex-shrink-0 mr-4 mt-0.5" />
+                  <p className="text-lg text-foreground/80">{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
           {/* What I Do Section */}
           <section>
             <h2 className="text-2xl font-semibold mb-8 text-foreground">What I Do</h2>
@@ -78,18 +93,6 @@ export default async function ServicePage({ params }: Props) {
             </div>
           </section>
 
-          {/* Typical Situations */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-8 text-foreground">Typical Situations</h2>
-            <div className="space-y-4">
-              {service.typicalSituations.map((item, i) => (
-                <div key={i} className="flex items-start">
-                  <CheckCircle2 className="h-6 w-6 text-secondary flex-shrink-0 mr-4 mt-0.5" />
-                  <p className="text-lg text-foreground/80">{item}</p>
-                </div>
-              ))}
-            </div>
-          </section>
 
           {/* Team Image Banner */}
           <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
@@ -105,10 +108,17 @@ export default async function ServicePage({ params }: Props) {
 
           {/* Outcome */}
           <section className="bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 text-center">
-            <h2 className="text-2xl font-semibold mb-4">The Outcome</h2>
-            <p className="text-lg opacity-90 font-medium">
-              {service.outcome}
-            </p>
+            <h2 className="text-2xl font-semibold mb-6">The Outcome</h2>
+            <div className={`text-lg opacity-90 font-medium ${service.outcome.includes('\n') ? "text-left inline-block max-w-3xl space-y-3" : "text-center"}`}>
+              {service.outcome.split('\n').map((line, i) => (
+                <div key={i} className={`flex items-start ${!service.outcome.includes('\n') && "justify-center"}`}>
+                   {service.outcome.includes('\n') && (
+                     <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-primary-foreground/80 flex-shrink-0" />
+                   )}
+                   <p>{line}</p>
+                </div>
+              ))}
+            </div>
           </section>
         </div>
       </div>

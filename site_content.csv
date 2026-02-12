@@ -1,0 +1,85 @@
+section	id	field	value
+hero		title	Making complex deals work
+hero		subtitle	Helping organisations structure, execute, and stabilise complex deals. From pursuit to delivery
+hero		cta	Let's Talk
+about		title	About Elevare
+about		description	Elevare is an advisory practice that works with companies to put structure around how they handle complex deals. From deciding which opportunities to pursue to making sure signed commitments can actually be delivered, we specialize in guiding businesses to effectively manage intricate deals and ensure successful outcomes.
+services	deal-process	title	Deal process management
+services	deal-process	subtitle	Deal process & deal desk
+services	deal-process	description	When large deals get stuck chasing approvals, have inconsistent pricing and discounts, or face last minute pushback from teams who just got involved.
+services	deal-process	slug	deal-process-management
+services	deal-process	challenge	"In many organisations, complex or non-standard deals are handled individually. There’s no defined process, approval paths are unclear and key teams like finance or legal are brought in too late. Every exception creates more back-and-forth and deals stall waiting for decisions. 
+The result: longer deal cycles, inconsistent outcomes, margin leakage, higher risk, frustrated teams, and executives approving deals they wouldn't have pursued in the first place."
+services	deal-process	whatIDo	"Map current deal flow and identify where deals stall.
+Define or improve approval framework for pursuit decisions (deal type, size) and pricing (discounts, margins and exceptions)
+Stand up or optimise a centralised deal desk with clear roles and responsibilities
+Design qualification gates to engage finance, legal and delivery early. 
+Support complex deals or sensitive deals hands-on while establishing the process and building internal capability.
+Track deal performance (cycle time, win rates, margins) and refine based on results."
+services	deal-process	typicalSituations	"Deals stall in approval loops
+Pricing and discount decisions are unclear, leading to inconsistent margins
+Approvals are missed, leading to unfavorable terms or commitments you can't deliver
+Responsibility for approvals is unclear; leadership is pulled into routine deal decisions"
+services	deal-process	outcome	Faster deal turnaround, clear accountability, better margin control, reduced leadership involvement and a deal process people can actually follow.
+services	deal-process	image	/computer.jpg
+services	deal-transition	title	Deal execution readines
+services	deal-transition	subtitle	Deal transition & alignment
+services	deal-transition	description	When signed deals come under pressure across scope, responsibility, and commercial terms, we ensure post-signature agreements are executable, stakeholders are aligned, and escalation is managed efficiently.
+services	deal-transition	slug	deal-transition-alignment
+services	deal-transition	challenge	"Signing a deal does not automatically mean it is ready to be executed. In complex agreements, unresolved assumptions, differing interpretations, or missing ownership often surface only after signature. Without intervention, this leads to escalation, renegotiation, delivery friction, and early margin erosion."
+services	deal-transition	whatIDo	"Review the signed agreement, pricing, and assumptions
+Identify execution risks and pressure points
+Align sales, delivery, legal, and finance
+Clarify scope interpretation and responsibilities
+Define governance and escalation paths
+Support structured post-signature discussions when needed
+Prepare a clean transition into delivery and contract management"
+services	deal-transition	typicalSituations	"Delivery challenges what was sold
+Scope and expectations differ across teams
+Pricing or margin comes under pressure during planning
+Leadership is drawn into repeated escalations
+Post-signature discussions drift without structure
+Multi-stakeholder deals lose momentum after signing"
+services	deal-transition	outcome	Fewer escalations, clear ownership and decision rights, a protected commercial position, and a faster, calmer start of delivery.
+services	deal-transition	image	/boats.jpg
+services	capture-bid	title	Capture & bid management
+services	capture-bid	subtitle	
+services	capture-bid	description	When deciding which deals to pursue and how to win them.
+services	capture-bid	slug	capture-bid-support
+services	capture-bid	challenge	"Winning the right deals requires more than a good idea or a strong proposal. It requires clear choices, disciplined preparation, and consistent execution across capture and bid activities. Without structure and ownership, teams lose focus, messages fragment, deadlines slip, and senior stakeholders are pulled in too late."
+services	capture-bid	whatIDo	"Support opportunity qualification and bid/no-bid decisions
+Help shape win strategy and positioning
+Manage end-to-end bid and RFP processes
+Structure timelines, responsibilities, and governance
+Coordinate contributors and reviewers
+Review and strengthen written responses
+Coach senior stakeholders for client pitches and presentations"
+services	capture-bid	typicalSituations	"Too many opportunities and too little focus
+Bids run late or lack ownership
+Messages are inconsistent across sections
+Senior stakeholders are insufficiently prepared for pitches
+Internal teams struggle to work together under deadline pressure"
+services	capture-bid	outcome	Better focus on the right opportunities, stronger and more coherent proposals, more controlled bid processes, and improved confidence in client-facing moments.
+services	capture-bid	image	/world.jpg
+services	processes-roles	title	Ways of working operations
+services	processes-roles	subtitle	Processes, roles & collaboration tools
+services	processes-roles	description	When ways of working are unclear across distributed teams, I help teams collaborate smoothly, across locations and functions, by clarifying processes, responsibilities, and guiding in the selection, implementation and adoption of digital tools.
+services	processes-roles	slug	processes-roles-collaboration
+services	processes-roles	challenge	"Many organisations invest heavily in tools and platforms, yet still struggle with how work actually gets done. The issue is rarely the technology itself, but unclear processes, roles, and decision-making frameworks. Without alignment, adoption remains low, collaboration breaks down, and the expected value of transformation initiatives is never realised."
+services	processes-roles	whatIDo	"Assess current ways of working across teams
+Clarify roles, responsibilities, and decision points
+Support implementation of digital workplace tools
+Translate business needs into practical operating models
+Define governance, usage agreements, and adoption approaches
+Support change and communication activities"
+services	processes-roles	typicalSituations	"New tools are implemented but poorly adopted
+Teams work differently without clear alignment
+Collaboration breaks down across locations or functions
+Governance exists on paper but not in practice
+Change initiatives struggle to land"
+services	processes-roles	outcome	Clear and consistent ways of working, better use of existing tools, reduced friction between teams, and higher adoption and engagement.
+services	processes-roles	image	/group horizontal.avif
+footer		phone	+34 675 464 960
+footer		email	elevareconsulting@outlook.com
+footer		locations	L'Eliana, Valencia (Spain) and Rotterdam (the Netherlands)
+footer		copyright	© 2026 by Elevare advisory.

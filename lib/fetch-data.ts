@@ -20,14 +20,30 @@ export async function getSiteData(): Promise<SiteData> {
 
   try {
     const response = await fetch(SHEET_URL, { next: { revalidate: 60 } });
+    if (!response.ok) {
+      console.error(`Failed to fetch CSV: ${response.status} ${response.statusText}`);
+      return defaultData;
+    }
     const csvText = await response.text();
+    
+    // Find the start of the actual data (skip empty rows often found in Google Sheets exports)
+    // We look for the header row "section,id,field,value"
+    const headerRow = "section,id,field,value";
+    const headerIndex = csvText.indexOf(headerRow);
+    
+    const cleanCsvText = headerIndex !== -1 ? csvText.substring(headerIndex) : csvText;
 
     return new Promise((resolve) => {
-      Papa.parse(csvText, {
+      Papa.parse(cleanCsvText, {
         header: true,
+        skipEmptyLines: true,
         complete: (results) => {
           const rows = results.data as CsvRow[];
           const data = transformCsvToData(rows);
+          // console.log("Transformed services count:", data.services.length);
+          if (data.services.length === 0) {
+            console.warn("No services found in CSV data. Using default services.");
+          }
           resolve(data);
         },
         error: (error: any) => {

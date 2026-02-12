@@ -13,27 +13,24 @@ export const siteData = {
       id: "deal-process",
       title: "Deal process management",
       subtitle: "Deal process & deal desk",
-      description: "When managing large or complex deals is a painful process, decisions take longer than needed or responsibilities are unclear, we take lead in setting up a clear deal process or designated deal desk. This ensures deals move efficiently through approvals, exceptions, pricing, and governance so opportunities don’t stall.",
+      description: "When large deals get stuck CHasing approvals, have inconsistent pricing and discounts, or face last minute pushback from teams who just got involved.",
       slug: "deal-process-management",
-        challenge:
-    "In many organisations, deals slow down not because of market conditions, but because internal processes cannot keep up. Pricing exceptions, approvals, risk reviews, and governance steps become bottlenecks—especially in complex or high-value opportunities. The result is delayed decisions, inconsistent outcomes, and unnecessary leadership involvement.",
-  whatIDo: [
-    "Design or improve deal and approval processes",
-    "Set up or optimise deal desks",
-    "Clarify roles, responsibilities, and decision rights",
-    "Define pricing, risk, and exception workflows",
-    "Support complex or sensitive deals through internal governance",
-    "Reduce friction between sales, finance, legal, and leadership"
-  ],
-  typicalSituations: [
-    "Deals stall in approval loops",
-    "Pricing and margin decisions are inconsistent",
-    "Responsibility for approvals is unclear",
-    "Senior leadership is pulled into routine deal decisions",
-    "Deal governance differs per team or region"
-  ],
-  outcome:
-    "Faster deal turnaround, clear accountability, better margin control, reduced leadership involvement—and a deal process people actually use.",
+      challenge: "In many organisations, complex or non-standard deals are handled individually. There’s no defined process, approval paths are unclear and key teams like finance or legal are brought in too late. Every exception creates more back-and-forth and deals stall waiting for decisions. \n\nThe result: longer deal cycles, inconsistent outcomes, margin leakage, higher risk, frustrated teams, and executives approving deals they wouldn't have pursued in the first place.",
+      whatIDo: [
+        "Map current deal flow and identify where deals stall.",
+        "Define or improve approval framework for pursuit decisions (deal type, size) and pricing (discounts, margins and exceptions)",
+        "Stand up or optimise a centralised deal desk with clear roles and responsibilities",
+        "Design qualification gates to engage finance, legal and delivery early.",
+        "Support complex deals or sensitive deals hands-on while establishing the process and building internal capability.",
+        "Track deal performance (cycle time, win rates, margins) and refine based on results."
+      ],
+      typicalSituations: [
+        "Deals stall in approval loops",
+        "Pricing and discount decisions are unclear, leading to inconsistent margins",
+        "Approvals are missed, leading to unfavorable terms or commitments you can't deliver",
+        "Responsibility for approvals is unclear; leadership is pulled into routine deal decisions"
+      ],
+      outcome: "Faster deal turnaround, clear accountability, better margin control, reduced leadership involvement and a deal process people can actually follow.",
       image: "/computer.jpg"
     },
     {
@@ -42,7 +39,7 @@ export const siteData = {
       subtitle: "Deal transition & alignment",
       description: "When signed deals come under pressure across scope, responsibility, and commercial terms, we ensure post-signature agreements are executable, stakeholders are aligned, and escalation is managed efficiently.",
       slug: "deal-transition-alignment",
-        challenge:
+      challenge:
     "Signing a deal does not automatically mean it is ready to be executed. In complex agreements, unresolved assumptions, differing interpretations, or missing ownership often surface only after signature. Without intervention, this leads to escalation, renegotiation, delivery friction, and early margin erosion.",
   whatIDo: [
     "Review the signed agreement, pricing, and assumptions",
@@ -67,30 +64,28 @@ export const siteData = {
     },
     {
       id: "capture-bid",
-      title: "Supporting services",
-      subtitle: "Capture & bid support",
-      description: "When deciding which deals to pursue and how to win them. I support in early decision-making and end-to-end bid work, including opportunity selection, proposal project management, content review, and pitch development, to increase the likelihood of winning high-value deals.",
+      title: "Capture & bid management",
+      subtitle: "",
+      description: "When deciding which deals to pursue and how to win them.",
       slug: "capture-bid-support",
-       challenge:
-    "Winning the right deals requires more than a good idea or a strong proposal. It requires clear choices, disciplined preparation, and consistent execution across capture and bid activities. Without structure and ownership, teams lose focus, messages fragment, deadlines slip, and senior stakeholders are pulled in too late.",
-  whatIDo: [
-    "Support opportunity qualification and bid/no-bid decisions",
-    "Help shape win strategy and positioning",
-    "Manage end-to-end bid and RFP processes",
-    "Structure timelines, responsibilities, and governance",
-    "Coordinate contributors and reviewers",
-    "Review and strengthen written responses",
-    "Coach senior stakeholders for client pitches and presentations"
-  ],
-  typicalSituations: [
-    "Too many opportunities and too little focus",
-    "Bids run late or lack ownership",
-    "Messages are inconsistent across sections",
-    "Senior stakeholders are insufficiently prepared for pitches",
-    "Internal teams struggle to work together under deadline pressure"
-  ],
-  outcome:
-    "Better focus on the right opportunities, stronger and more coherent proposals, more controlled bid processes, and improved confidence in client-facing moments.",
+      challenge: "Winning the right deals requires more than a good idea or a strong proposal. It requires clear choices, disciplined preparation, and consistent execution across capture and bid activities. Without structure and ownership, teams lose focus, messages fragment, deadlines slip, and senior stakeholders are pulled in too late.",
+      whatIDo: [
+        "Support opportunity qualification and bid/no-bid decisions",
+        "Help shape win strategy and positioning",
+        "Manage end-to-end bid and RFP processes",
+        "Structure timelines, responsibilities, and governance",
+        "Coordinate contributors and reviewers",
+        "Review and strengthen written responses",
+        "Coach senior stakeholders for client pitches and presentations"
+      ],
+      typicalSituations: [
+        "Too many opportunities and too little focus",
+        "Bids run late or lack ownership",
+        "Messages are inconsistent across sections",
+        "Senior stakeholders are insufficiently prepared for pitches",
+        "Internal teams struggle to work together under deadline pressure"
+      ],
+      outcome: "Better focus on the right opportunities, stronger and more coherent proposals, more controlled bid processes, and improved confidence in client-facing moments.",
       image: "/world.jpg"
     },
     {
@@ -99,7 +94,7 @@ export const siteData = {
       subtitle: "Processes, roles & collaboration tools",
       description: "When ways of working are unclear across distributed teams, I help teams collaborate smoothly, across locations and functions, by clarifying processes, responsibilities, and guiding in the selection, implementation and adoption of digital tools.",
       slug: "processes-roles-collaboration",
-       challenge:
+      challenge:
     "Many organisations invest heavily in tools and platforms, yet still struggle with how work actually gets done. The issue is rarely the technology itself, but unclear processes, roles, and decision-making frameworks. Without alignment, adoption remains low, collaboration breaks down, and the expected value of transformation initiatives is never realised.",
   whatIDo: [
     "Assess current ways of working across teams",
