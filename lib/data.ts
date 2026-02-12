@@ -125,5 +125,21 @@ export const siteData = {
     email: "elevareconsulting@outlook.com",
     locations: "L'Eliana, Valencia (Spain) and Rotterdam (the Netherlands)",
     copyright: "© 2026 by Elevare advisory." 
+  },
+  methodology: [
+    {
+      id: "how-we-work",
+      title: "How we work",
+      description: "We don't just design processes. We work embedded with your team to implement them, including the tools and systems that make them stick. Our approach is built on years managing complex bids, deals, and programs across professional services, government, and international environments. We focus on what actually works in practice, not just on paper."
+    },
+    {
+      id: "tech-tools",
+      title: "Technology & tools",
+      description: "We help clients choose and implement the right tools for their deal and bid processes, from CRM and deal desk platforms to AI writing assistants and collaboration software. We focus on practical adoption and governance, not technology for its own sake."
+    }
+  ],
+  contact: {
+    title: "Contact Us",
+    subtitle: "Ready to structure your complex deals? Get in touch with us today."
   }
 };

@@ -35,9 +35,9 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen pt-32 pb-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-foreground text-center">Contact Us</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-foreground text-center">{siteData.contact.title}</h1>
         <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto mb-16">
-          Ready to structure your complex deals? Get in touch with us today.
+          {siteData.contact.subtitle}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">

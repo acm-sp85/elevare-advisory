@@ -63,6 +63,8 @@ function transformCsvToData(rows: CsvRow[]): SiteData {
     hero: {},
     about: {},
     services: [],
+    methodology: [],
+    contact: {},
     footer: {},
   };
 
@@ -85,7 +87,25 @@ function transformCsvToData(rows: CsvRow[]): SiteData {
     if (row.section === "footer") {
       data.footer[row.field] = row.value;
     }
+    
+    // Handle Methodology
+    if (row.section === "methodology" && row.id) {
+       if (!data.methodology) data.methodology = [];
+       // Simple find or create
+       let methodItem = data.methodology.find((m: any) => m.id === row.id);
+       if (!methodItem) {
+          methodItem = { id: row.id };
+          data.methodology.push(methodItem);
+       }
+       methodItem[row.field] = row.value;
+    }
 
+    // Handle Contact
+    if (row.section === "contact") {
+      if (!data.contact) data.contact = {};
+      data.contact[row.field] = row.value;
+    }
+    
     // Handle Services
     if (row.section === "services" && row.id) {
       if (!servicesMap[row.id]) {
