@@ -58,68 +58,90 @@ export default async function ServicePage({ params }: Props) {
         </p>
 
         <div className="space-y-16">
-          {/* Challenge Section */}
-          <section className="bg-muted/30 rounded-3xl p-8 md:p-12 border border-border/50">
-            {/* <h2 className="text-2xl font-semibold mb-6 text-primary">The Challenge</h2> */}
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              {service.challenge}
-            </p>
-          </section>
+  {/* Challenge Section - Side accent card */}
+  <section className="relative bg-gradient-to-br from-muted/40 to-muted/20 rounded-2xl p-8 md:p-12 border-l-4 border-primary shadow-md">
+    <div className="absolute top-8 right-8 w-16 h-16 bg-primary/10 rounded-full blur-2xl" />
+    <p className="text-lg text-foreground leading-relaxed relative z-10">
+      {service.challenge}
+    </p>
+  </section>
 
-          {/* Typical Situations */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-8 text-foreground">Typical Situations</h2>
-            <div className="space-y-4">
-              {service.typicalSituations.map((item, i) => (
-                <div key={i} className="flex items-start">
-                  <CheckCircle2 className="h-6 w-6 text-secondary flex-shrink-0 mr-4 mt-0.5" />
-                  <p className="text-lg text-foreground/80">{item}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-          {/* What I Do Section */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-8 text-foreground">What I Do</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {service.whatIDo.map((item, i) => (
-                <div key={i} className="bg-card border border-border/50 rounded-xl p-6 shadow-sm">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <span className="text-primary font-bold">{i + 1}</span>
-                  </div>
-                  <p className="text-muted-foreground">{item}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+  {/* Typical Situations */}
+  <section>
+    <h2 className="text-2xl font-semibold mb-8 text-foreground">Typical Situations</h2>
+    <div className="space-y-4">
+      {service.typicalSituations.map((item, i) => (
+        <div key={i} className="flex items-start">
+          <CheckCircle2 className="h-6 w-6 text-secondary flex-shrink-0 mr-4 mt-0.5" />
+          <p className="text-lg text-foreground/80">{item}</p>
+        </div>
+      ))}
+    </div>
+  </section>
 
-
-          {/* Team Image Banner */}
-          <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
-             <Image
-              src={service.image || "/group horizontal.avif"} // Use specific image or fallback
-              alt={`${service.title} illustration`}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 80vw"
-            />
-            <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
+  {/* What I Do Section */}
+  <section>
+    <h2 className="text-2xl font-semibold mb-8 text-foreground">What I Do</h2>
+    <div className="grid md:grid-cols-3 gap-6">
+      {service.whatIDo.map((item, i) => (
+        <div key={i} className="bg-card border border-border/50 rounded-xl p-6 shadow-sm">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+            <span className="text-primary font-bold">{i + 1}</span>
           </div>
+          <p className="text-muted-foreground">{item}</p>
+        </div>
+      ))}
+    </div>
+  </section>
 
-          {/* Outcome */}
-          <section className="bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 text-left">
-            <h2 className="text-2xl font-semibold mb-6 text-center">The Outcome</h2>
-            <div className={`text-lg opacity-90 font-medium ${service.outcome.includes('\n') ? "text-left inline-block max-w-3xl space-y-3" : "text-center"}`}>
-              {service.outcome.split('\n').map((line, i) => (
-                <div key={i} className={`flex items-start ${!service.outcome.includes('\n') && "justify-center"}`}>
-                   {service.outcome.includes('\n') && (
-                     <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-primary-foreground/80 flex-shrink-0" />
-                   )}
-                   <p>{line}</p>
-                </div>
-              ))}
+  {/* Team Image Banner */}
+  <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
+     <Image
+      src={service.image || "/group horizontal.avif"}
+      alt={`${service.title} illustration`}
+      fill
+      className="object-cover"
+      sizes="(max-width: 768px) 100vw, 80vw"
+    />
+    <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
+  </div>
+{/* Outcome - Geometric frame design */}
+<section className="relative">
+  {/* Subtle dot grid background */}
+  <div className="absolute inset-0 opacity-60" style={{
+    backgroundImage: 'radial-gradient(circle, hsl(var(--primary)) 1px, transparent 1px)',
+    backgroundSize: '24px 24px'
+  }} />
+  
+  {/* Header - centered with underline */}
+  <div className="text-center mb-8 relative z-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+      The Outcome
+    </h2>
+    <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+  </div>
+  
+  {/* Content container */}
+  <div className="relative bg-background/50 backdrop-blur-sm border-2 border-dashed border-primary/30 rounded-2xl p-8 md:p-12 mx-8">
+    {/* Outcome content */}
+    <div className={`text-lg text-foreground/90 font-medium ${service.outcome.includes('\n') ? "text-left max-w-3xl space-y-4 mx-auto" : "text-center"}`}>
+      {service.outcome.split('\n').map((line, i) => (
+        <div key={i} className={`flex items-start gap-4 group ${!service.outcome.includes('\n') && "justify-center"}`}>
+          {service.outcome.includes('\n') && (
+            <div className="relative flex-shrink-0 mt-2">
+              <div className="w-3 h-3 rounded-full border-2 border-primary bg-background group-hover:bg-primary transition-colors duration-300" />
+              <div className="absolute inset-0 w-3 h-3 rounded-full border-2 border-primary animate-ping opacity-20" />
             </div>
-          </section>
+          )}
+          <p className="leading-relaxed">{line}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+  
+
+
           
           <div className="flex justify-center pt-8">
             <Link 
