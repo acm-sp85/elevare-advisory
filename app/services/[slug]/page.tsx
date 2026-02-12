@@ -120,6 +120,15 @@ export default async function ServicePage({ params }: Props) {
               ))}
             </div>
           </section>
+          
+          <div className="flex justify-center pt-8">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-primary-foreground bg-primary rounded-full hover:bg-primary/90 transition-all hover:scale-105 shadow-lg"
+            >
+              {service.cta || "Get in Touch"}
+            </Link>
+          </div>
         </div>
       </div>
     </div>

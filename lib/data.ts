@@ -31,7 +31,8 @@ export const siteData = {
         "Responsibility for approvals is unclear; leadership is pulled into routine deal decisions"
       ],
       outcome: "Faster deal turnaround, clear accountability, better margin control, reduced leadership involvement and a deal process people can actually follows.",
-      image: "/computer.jpg"
+      image: "/computer.jpg",
+      cta: "Schedule a Deal Process Review"
     },
     {
       id: "deal-transition",
@@ -60,7 +61,8 @@ export const siteData = {
   ],
   outcome:
     "Fewer escalations, clear ownership and decision rights, a protected commercial position, and a faster, calmer start of delivery.",
-      image: "/boats.jpg"
+      image: "/boats.jpg",
+      cta: "Plan Your Deal Transition"
     },
     {
       id: "capture-bid",
@@ -86,7 +88,8 @@ export const siteData = {
         "Internal teams struggle to work together under deadline pressure"
       ],
       outcome: "Better focus on the right opportunities, stronger and more coherent proposals, more controlled bid processes, and improved confidence in client-facing moments.",
-      image: "/world.jpg"
+      image: "/world.jpg",
+      cta: "Optimize Your Bid Strategy"
     },
     {
       id: "processes-roles",
@@ -113,7 +116,8 @@ export const siteData = {
   ],
   outcome:
     "Clear and consistent ways of working, better use of existing tools, reduced friction between teams, and higher adoption and engagement.",
-      image: "/group horizontal.avif"
+      image: "/group horizontal.avif",
+      cta: "Improve Team Collaboration"
     }
   ],
   footer: {
