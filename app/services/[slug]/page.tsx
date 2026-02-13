@@ -61,9 +61,15 @@ export default async function ServicePage({ params }: Props) {
   {/* Challenge Section - Side accent card */}
   <section className="relative bg-gradient-to-br from-muted/40 to-muted/20 rounded-2xl p-8 md:p-12 border-l-4 border-primary shadow-md">
     <div className="absolute top-8 right-8 w-16 h-16 bg-primary/10 rounded-full blur-2xl" />
-    <p className="text-lg text-foreground leading-relaxed relative z-10">
-      {service.challenge}
-    </p>
+    <div className="text-lg text-foreground leading-relaxed relative z-10 space-y-6">
+      {service.challenge.split('\n').map((paragraph, i) => (
+        paragraph.trim() && (
+          <p key={i}>
+            {paragraph}
+          </p>
+        )
+      ))}
+    </div>
   </section>
 
   {/* Typical Situations */}
