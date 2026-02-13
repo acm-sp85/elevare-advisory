@@ -52,12 +52,14 @@ export default async function ServicePage({ params }: Props) {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
           {service.title}
         </h1>
-        
+
         <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
           {service.description}
         </p>
 
         <div className="space-y-16">
+
+
   {/* Challenge Section - Side accent card */}
   <section className="relative bg-gradient-to-br from-muted/40 to-muted/20 rounded-2xl p-8 md:p-12 border-l-4 border-primary shadow-md">
     <div className="absolute top-8 right-8 w-16 h-16 bg-primary/10 rounded-full blur-2xl" />
@@ -100,17 +102,6 @@ export default async function ServicePage({ params }: Props) {
     </div>
   </section>
 
-  {/* Team Image Banner */}
-  <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
-     <Image
-      src={service.image || "/group horizontal.avif"}
-      alt={`${service.title} illustration`}
-      fill
-      className="object-cover"
-      sizes="(max-width: 768px) 100vw, 80vw"
-    />
-    <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
-  </div>
 {/* Outcome - Geometric frame design */}
 <section className="relative">
   {/* Subtle dot grid background */}
@@ -143,7 +134,19 @@ export default async function ServicePage({ params }: Props) {
         </div>
       ))}
     </div>
+    
   </div>
+            {/* Team Image Banner */}
+  {/* <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
+     <Image
+      src={service.image || "/group horizontal.avif"}
+      alt={`${service.title} illustration`}
+      fill
+      className="object-cover"
+      sizes="(max-width: 768px) 100vw, 80vw"
+    />
+    <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
+  </div> */}
 </section>
   
 
